@@ -15,7 +15,7 @@ public class TrapeziumUser extends Trapezium{
         System.out.println("This trapezium has base value "+trap.base);
         System.out.println("This trapezium has top value "+trap.top);
         System.out.println("This trapezium has height value "+trap.height);
-        
+//        test
         System.out.println("\nThe area of the trapezium is "+trap.getArea());
         System.out.println("\nTrapezium class program terminated.");
     }
