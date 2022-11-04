@@ -2,32 +2,31 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package Practical3.Q4;
+package Practical3.Q5;
 
 /**
  *
  * @author leong
  */
-public class Lecturer {
-    String name;
-    int staffID;
+public class Person{
+    private String name;
     
-    public Lecturer(){}
+    public Person(){
+    }
     
-    public Lecturer(String newName,int newID){
+    public Person(String newName){
+        setName(newName);
+    }
+    
+    public void setName(String newName){
         name = newName;
-        staffID = newID;
     }
     
     public String getName(){
         return name;
     }
     
-    public void setName(String str){
-        name = str;
-    }
-    
-    public double calcMonthlyPay(){
-        return 0;
+    public void introduce(){
+        System.out.println("My name is "+name);
     }
 }
