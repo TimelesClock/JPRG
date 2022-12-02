@@ -10,17 +10,19 @@ package Practical2;
  */
 public class Q10 {
     public static void main(String [] args){
-        int[] arr = {11,0,10,2,2};
-        int max = arr[0];
-        String str = "";
-        for (int number: arr){
-            if (number > max){
-                max = number;
-            }
-            str += number + " ";
-        }
+        String[] arr =  new String[] {"11","0","10","2","2"};
         
-        System.out.println("Elements of int array: "+str);
-        System.out.println("Highest Element: "+max);
+        System.out.println("Elements of int array: "+String.join(" ",arr));
+        System.out.println("Highest Element: "+max(arr));
+    }
+    
+    public static int max(String[] arr){
+        int max = Integer.parseInt(arr[0]);
+        for (String number:arr){
+            if (Integer.parseInt(number)>max){
+                max = Integer.parseInt(number);
+            }
+        }
+        return max;
     }
 }
